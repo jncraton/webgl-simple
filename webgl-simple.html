@@ -89,8 +89,6 @@
     gl.drawArrays(gl.TRIANGLES, 0, triangleVertices.length)
 
     // Place the square
-    var modelView = 
-
     gl.bindBuffer(gl.ARRAY_BUFFER, squareVertices)
     gl.vertexAttribPointer(shaderProgram.vertexPositionAttribute, 3, gl.FLOAT, false, 0, 0)
     gl.uniformMatrix4fv(gl.getUniformLocation(shaderProgram, "modelView"), false, [
